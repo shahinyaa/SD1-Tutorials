@@ -1,0 +1,5 @@
+# Ask the user
+num_stars = int(input("Enter the number of stars you want to display: "))
+
+stars = '*' * num_stars
+print(stars)

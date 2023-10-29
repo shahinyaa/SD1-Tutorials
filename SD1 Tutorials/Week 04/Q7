@@ -1,0 +1,29 @@
+import random
+
+# Generate a random number between 1 and 20
+hidden_number = random.randint(1, 20)
+
+# Initialize the number of guesses and maximum attempts
+attempts = 0
+max_attempts = 5
+
+# Main game loop
+while attempts < max_attempts:
+    # Ask the user for a guess
+    guess = int(input(f"Guess the number (between 1 and 20) - Attempt {attempts + 1}: "))
+
+    # Check if the guess is correct
+    if guess == hidden_number:
+        print(f"Congratulations! You guessed the correct number ({hidden_number}) in {attempts + 1} attempts.")
+        break
+    elif guess < hidden_number:
+        print("The correct number is higher than your guess.")
+    else:
+        print("The correct number is lower than your guess.")
+
+    # Increment the number of attempts
+    attempts += 1
+
+# Check if the user didn't guess the number in 5 attempts
+if attempts == max_attempts:
+    print(f"Sorry, you've run out of attempts. The correct number was {hidden_number}.")

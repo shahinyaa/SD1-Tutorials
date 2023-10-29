@@ -1,0 +1,26 @@
+#Initializing variables
+hidden=6
+
+
+
+#Process
+while True:
+    guess=int(input("Enter a guess number between 1 and 20: "))
+    if guess==hidden:
+        print(guess, "was correct.")
+        break
+    else:
+        print(guess, "is not correct")
+    
+
+import random
+hidden=6
+
+while True:
+    guess=random
+    if guess==hidden:
+        print(guess, "was correct.")
+        break
+    else:
+        print(guess, "is not correct")
+    

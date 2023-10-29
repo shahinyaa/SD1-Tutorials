@@ -1,0 +1,6 @@
+total=str(10)
+greet=str('Hello')
+both=(total+greet)
+print(both)
+
+"It produced error because we cannot concatenate integers with strings"

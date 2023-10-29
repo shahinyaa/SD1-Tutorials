@@ -1,0 +1,9 @@
+"""a="Hello out there"
+print(a)
+b='Hello again'
+print(b)"""
+
+#Modified program
+a="Hello out there"
+b='Hello again'
+print(a,b, end=" ")
